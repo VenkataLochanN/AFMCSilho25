@@ -1,0 +1,104 @@
+body {
+    background: #121E14;
+    line-height: normal !important;
+}
+
+/* ----------Header---------- */
+
+.headerparentdiv {
+    border-radius: 20px;
+    margin: 10px;
+    background: #040D05;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pagelinks {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.headerlogoimg {
+    background-color: black;
+}
+
+/* ----------Footer---------- */
+
+.site-footer {
+    border-radius: 20px;
+    margin: 10px;
+    background: #040D05;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerlink {
+    text-decoration: none;
+}
+
+.footerlinkcont {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div#social {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.footerhead {
+    text-decoration: underline;
+}
+
+.iframemap {
+    border-radius: 200px;
+}
+
+.social {
+    margin: 10px;
+}
+
+div#mapdiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.maptext {
+    margin: 20px;
+}
+/* ----------Definitions---------- */
+.textsize20 {
+    font-size: 20px;
+}
+.textsize30 {
+    font-size: 30px;
+}
+.textsize40 {
+    font-size: 40px;
+}
+.textsize25 {
+    font-size: 25px;
+}
+.textsize50 {
+    font-size: 50px;
+}
+.textsize15 {
+    font-size: 15px;
+}
