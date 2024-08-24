@@ -42,7 +42,10 @@ body {
 	display: none;
 	transition: all 300ms ease-in-out;
 }
-@media only screen and (max-width: 600px) { /* Do this if window is width or less */
+
+@media only screen and (max-width: 600px) {
+
+	/* Do this if window is width or less */
 	.menu {
 		margin: 10px;
 		display: block;
@@ -53,7 +56,7 @@ body {
 
 .ham {
 	user-select: none;
-	border: 2px solid #fff;
+	border: 2px solid #e6d5a0;
 	border-radius: 50%;
 	transition: border-radius 300ms ease-in-out;
 }
@@ -65,7 +68,7 @@ body {
 .line {
 	fill: none;
 	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-	stroke: #fff;
+	stroke: #e6d5a0;
 	stroke-width: 5.5;
 	stroke-linecap: round;
 }
@@ -87,16 +90,19 @@ body {
 }
 
 .pagecontainer {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
 	width: 100%;
-    justify-content: space-evenly;
+	justify-content: space-evenly;
 	transition: all 300ms ease-in-out;
 }
-@media only screen and (max-width: 600px) { /* Do this if window is width or less */
+
+@media only screen and (max-width: 600px) {
+
+	/* Do this if window is width or less */
 	.pagecontainer {
 		display: none;
 		transition: all 300ms ease-in-out;
@@ -109,12 +115,64 @@ body {
 	background-color: #e6d5a0;
 	color: #121e14;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 30px;
 	margin: 10px;
 }
 
 .regbutton {
 	margin-left: auto;
+}
+
+/* Sidebar */
+.dispnone {
+	width: 0 !important;
+	left: -200px !important;
+}
+
+#sidebar {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #e6d5a0;
+    transition: all 1000ms ease-in-out;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lineg {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: #040D05;
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+
+.hamg {
+	user-select: none;
+	border: 2px solid #040D05;
+	border-radius: 50%;
+	transition: border-radius 300ms ease-in-out;
+}
+
+.sblinks {
+	color: #121e14;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.sbcont {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* ----------Footer---------- */

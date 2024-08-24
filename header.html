@@ -19,12 +19,32 @@
             <p class="regbtn">Register</p>
         </div>
     </div>
+
     <div class="headerheadingcont"></div>
+
     <div class="pagecontainer">
-        <div><a class="pagelinks" href="https://afmcsilhouettes.in/">Home</a></div>
-        <div><a class="pagelinks" href="https://afmcsilhouettes.in/Sponsors">Sponsors</a></div>
-        <div><a class="pagelinks" href="https://afmcsilhouettes.in/Team">Team</a></div>
+        <a class="pagelinks" href="https://afmcsilhouettes.in/">Home</a>
+        <a class="pagelinks" href="https://afmcsilhouettes.in/Sponsors">Sponsors</a>
+        <a class="pagelinks" href="https://afmcsilhouettes.in/Team">Team</a>
     </div>
+
+    <div id="sidebar" class="dispnone">
+        <div class="menu">
+            <svg id="menubtn2" class="hamg hamRotate ham1" viewBox="0 0 100 100" width="50">
+                <path class="lineg top"
+                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path class="lineg middle" d="m 30,50 h 40" />
+                <path class="lineg bottom"
+                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+        </div>
+        <div class="sbcont">
+            <a class="sblinks" href="https://afmcsilhouettes.in/">Home</a>
+            <a class="sblinks" href="https://afmcsilhouettes.in/Sponsors">Sponsors</a>
+            <a class="sblinks" href="https://afmcsilhouettes.in/Team">Team</a>
+        </div>
+    </div>
+
 </div>
 
 <script>
@@ -43,8 +63,17 @@
 
     // find the element
     const menubtn = document.getElementById("menubtn");
+    const menubtn2 = document.getElementById("menubtn2");
+    const sidebar = document.getElementById("sidebar");
 
     on(menubtn, "click", function () {
         menubtn.classList.toggle("active");
+        menubtn2.classList.toggle("active");
+        sidebar.classList.toggle("dispnone");
+    });
+    on(menubtn2, "click", function () {
+        menubtn.classList.toggle("active");
+        menubtn2.classList.toggle("active");
+        sidebar.classList.toggle("dispnone");
     });
 </script>
