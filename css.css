@@ -8,7 +8,7 @@ body {
 .headerparentdiv {
 	border-radius: 20px;
 	margin: 10px;
-	background: #040D05;
+	background: #001330;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -137,7 +137,7 @@ body {
     z-index: 5;
     top: 0;
     left: 0;
-    background-color: #e6d5a0;
+    background-color: #044553;
     transition: all 1000ms ease-in-out;
     flex-direction: column;
     align-content: center;
@@ -148,20 +148,20 @@ body {
 .lineg {
 	fill: none;
 	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-	stroke: #040D05;
+	stroke: #e6d5a0;
 	stroke-width: 5.5;
 	stroke-linecap: round;
 }
 
 .hamg {
 	user-select: none;
-	border: 2px solid #040D05;
+	border: 2px solid #e6d5a0;
 	border-radius: 50%;
 	transition: border-radius 300ms ease-in-out;
 }
 
 .sblinks {
-	color: #121e14;
+	color: #e6d5a0;
 	font-size: 30px;
 	text-decoration: none;
 }
@@ -180,7 +180,7 @@ body {
 .site-footer {
 	border-radius: 20px;
 	margin: 10px;
-	background: #040D05;
+	background: #001330;
 	display: flex;
 	align-content: center;
 	justify-content: center;
