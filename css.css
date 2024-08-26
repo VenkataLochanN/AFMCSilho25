@@ -237,6 +237,18 @@ div#mapdiv {
 
 /* ----------Definitions---------- */
 
+.rfont {
+	font-family: Randi Font;
+}
+
+.cursivefont {
+	font-family: cursive;
+}
+
+.sdfont {
+	font-family: Sailors Dairy;
+}
+
 .hidden {
 	visibility: hidden;
 }
