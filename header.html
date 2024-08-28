@@ -4,20 +4,20 @@
     new bubbleCursor();
 </script>
 <div id="preloader" class="preloader">
-        <div class="container">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-            <div class="wave" id="wave5"></div>
-            <div class="wave" id="wave6"></div>
-            <div class="wave" id="wave7"></div>
-            <div class="wave" id="wave8"></div>
-            <div class="object">
-                <div class="boat"></div>
-                <div class="flag"></div>
-            </div>
+    <div class="container">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+        <div class="wave" id="wave5"></div>
+        <div class="wave" id="wave6"></div>
+        <div class="wave" id="wave7"></div>
+        <div class="wave" id="wave8"></div>
+        <div class="object">
+            <div class="boat"></div>
+            <div class="flag"></div>
         </div>
+    </div>
 </div>
 <div class="headerparentdiv">
 
@@ -109,9 +109,16 @@
 
 <script>
     //after window is loaded completely 
-    window.onload = function(){
+    window.onload = function () {
         //hide the preloader
         // document.querySelector(".preloader").style.display = "none";
         document.getElementById("preloader").classList.toggle("fadeout");
     }
+
+    // var delayInMilliseconds = 3500; //3.5 second
+
+    // setTimeout(function () {
+    //     //your code to be executed after 1 second
+    //     document.querySelector(".preloader").style.display = "none";
+    // }, delayInMilliseconds);
 </script>
