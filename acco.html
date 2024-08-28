@@ -1,15 +1,57 @@
 <!-- wp:html -->
-<center>
-    <h1 style="font-family: mason;">Accommodation</h1>
+<style>
+    .imgface {
+        background-color: black;
+    }
 
-    <p style="font-family:mason; font-size:20px;">
+    .crewdesigcont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .crewcont {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personcont {
+        background: #001330;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    .crewdesig {
+        color: white;
+    }
+</style>
+
+<center>
+    <h1 class="msrfont">Accommodation</h1>
+
+    <p class="normaltxt sdfont">
         Welcome to a magical retreat where fantasy meets reality!
         Get ready for an unforgettable stay where new friendships blossom and memories are made in every cozy corner.
     </p>
 
-    <h1 style="font-family: mason;">Dorm levies</h1>
+    <img class="divider" src="https://afmcsilhouettes.in/wp-content/uploads/2024/08/Border-.png">
 
-    <p style="font-family:mason; font-size:20px;">
+    <h1 class="msrfont">Dorm levies</h1>
+
+    <p class="normaltxt sdfont">
         Non ac room - Rs.600 /- per person per day <br>
         Ac room (only for girls) - Rs.900/- per person per day<br> <br>
 
@@ -19,15 +61,74 @@
         For further details regarding your stay kindly contact the following wizards 🧙‍♂🧙
     </p>
 
-    <h1>Accommodation Heads</h1>
+    <img class="divider" src="https://afmcsilhouettes.in/wp-content/uploads/2024/08/Border-.png">
 
-    <p style="font-size:20px;">
-        //We're doing some work here...
-    </p>
+    <h1 class="msrfont">Accommodation Heads</h1>
 
-    <h1>Conductarium </h1>
+    <div id="crewcont"> <!--Contains all the Acco Heads-->
 
-    <p style="font-size:20px;">
+        <div class="crewdesigcont"><!--Contains crew based on designations-->
+            <div class="personcont"> <!--Contains crew data-->
+                <div class="facecont"> <!--Contains the face of the crew-->
+                    <img class="imgface" width="100px" height="100px" class="normaltxt sdfont">
+                </div>
+                <div class="detailcont"> <!--Contains the details of the crew-->
+                    <p class="crewname textsize25 normaltxt sdfont">Akanksha Singh</p> <!--Contains the Name of the crew-->
+                    <p class="crewphno textsize20">+91 7305682620</p> <!--Contains the Phone Number of the crew-->
+                    <p class="crewemail textsize20">afmcsilhouettes@gmail.com</p>
+                    <!--Contains the Email of the crew-->
+                </div>
+            </div>
+
+            <div class="personcont"> <!--Contains crew data-->
+                <div class="facecont"> <!--Contains the face of the crew-->
+                    <img class="imgface" width="100px" height="100px">
+                </div>
+                <div class="detailcont"> <!--Contains the details of the crew-->
+                    <p class="crewname textsize25 normaltxt sdfont">Kushi Singh</p> <!--Contains the Name of the crew-->
+                    <p class="crewphno textsize20">+91 9818792815</p> <!--Contains the Phone Number of the crew-->
+                    <p class="crewemail textsize20">afmcsilhouettes@gmail.com</p>
+                    <!--Contains the Email of the crew-->
+                </div>
+            </div>
+        </div>
+
+        <div class="crewdesigcont"><!--Contains crew based on designations-->
+            <div class="personcont"> <!--Contains crew data-->
+                <div class="facecont"> <!--Contains the face of the crew-->
+                    <img class="imgface" width="100px" height="100px" class="normaltxt sdfont">
+                </div>
+                <div class="detailcont"> <!--Contains the details of the crew-->
+                    <p class="crewname textsize25 normaltxt sdfont">Ratan Choudhary</p> <!--Contains the Name of the crew-->
+                    <p class="crewphno textsize20">+91 8239625291</p> <!--Contains the Phone Number of the crew-->
+                    <p class="crewemail textsize20">afmcsilhouettes@gmail.com</p>
+                    <!--Contains the Email of the crew-->
+                </div>
+            </div>
+
+            <div class="personcont"> <!--Contains crew data-->
+                <div class="facecont"> <!--Contains the face of the crew-->
+                    <img class="imgface" width="100px" height="100px" class="normaltxt sdfont">
+                </div>
+                <div class="detailcont"> <!--Contains the details of the crew-->
+                    <p class="crewname textsize25 normaltxt sdfont">Vishwanand Videh Jee</p> <!--Contains the Name of the crew-->
+                    <p class="crewphno textsize20">+91 9508545672</p> <!--Contains the Phone Number of the crew-->
+                    <p class="crewemail textsize20">afmcsilhouettes@gmail.com</p>
+                    <!--Contains the Email of the crew-->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <img class="divider" src="https://afmcsilhouettes.in/wp-content/uploads/2024/08/Border-.png">
+
+    <br>
+    <br>
+
+    <h1 class="msrfont">Conductarium </h1>
+
+    <p class="normaltxt sdfont">
         1) the following facilities are provided during your stay <br>
         - mattress <br>
         - ⁠washrooms<br>

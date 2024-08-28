@@ -3,11 +3,26 @@
 
     new bubbleCursor();
 </script>
-
+<div id="preloader" class="preloader">
+        <div class="container">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            <div class="wave" id="wave5"></div>
+            <div class="wave" id="wave6"></div>
+            <div class="wave" id="wave7"></div>
+            <div class="wave" id="wave8"></div>
+            <div class="object">
+                <div class="boat"></div>
+                <div class="flag"></div>
+            </div>
+        </div>
+</div>
 <div class="headerparentdiv">
 
     <div class="headerlogoimagecont">
-        <img class="headerlogoimg" height="75px" width="75px" src="https://afmcsilhouettes.in/wp-content/uploads/2024/03/deven-sir.png">
+        <img class="headerlogoimg" height="75px" width="75px">
     </div>
 
     <div class="headertopcont">
@@ -90,4 +105,13 @@
         menubtn2.classList.toggle("active");
         sidebar.classList.toggle("dispnone");
     });
+</script>
+
+<script>
+    //after window is loaded completely 
+    window.onload = function(){
+        //hide the preloader
+        // document.querySelector(".preloader").style.display = "none";
+        document.getElementById("preloader").classList.toggle("fadeout");
+    }
 </script>

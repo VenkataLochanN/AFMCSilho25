@@ -235,14 +235,175 @@ div#mapdiv {
 	margin: 20px;
 }
 
+/* ----------Divider---------- */
+
+
+.divider {
+	max-width: 20%;
+}
+@media only screen and (max-width: 600px) {
+
+	/* Do this if window is width or less */
+	.divider {
+		max-width: 40%;
+	}
+}
+
+/* ----------Store---------- */
+
+.wc-block-grid__products {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------Preloader---------- */
+
+.preloader {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #001330;
+    height: 100vh;
+    z-index: 99999;
+    text-align: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+.fadeout {
+	animation: fo 1s ease 3.5s forwards;
+}
+
+@keyframes fo {
+	0%{
+		opacity: 100%;
+	    }
+    100%{
+		opacity: 0%;
+	    }
+  }
+
+.container{
+    display: inline-block;
+    position: relative;
+    top: 35vh;
+    width: 120px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.object{
+    position: inherit;
+    top: -246px;
+    left: 30px;
+    z-index: -10;
+    transform: rotate(-5deg);
+    animation: sail 2s infinite linear;
+}
+
+.boat{
+    width: 50px;
+    height: 40px;
+    background-color: #f0e3c0;
+    transform: perspective(50px) rotateX(-60deg);
+}
+
+.flag{
+    background-color: #f0e3c0;
+    width: 20px;
+    height: 15px;
+    transform: rotate(70deg) skew(45deg);
+    position: relative;
+    top: -43px;
+    left: 13px;
+}
+
+
+
+.wave{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+
+#wave1, #wave3, #wave5, #wave7{
+    background-color: transparent;
+    border-top: 4px solid #f0e3c0;
+    animation: flow 1s infinite linear;
+}
+#wave2, #wave4, #wave6, #wave8{
+    border-bottom: 4px solid #f0e3c0;
+    animation: flow 1s infinite linear;
+}
+
+#wave1{
+    top: 76px;
+    left: -22px;
+}
+#wave2{
+    z-index: 1;
+    top: 12px;
+}
+#wave3{
+    top: 0px;
+    left: 22px;
+}
+#wave4{
+    z-index: 2;
+    top: -64px;
+    left: 44px;
+}
+#wave5{
+    top: -76px;
+    left: 66px;
+}
+#wave6{
+    z-index: 3;
+    top: -140px;
+    left: 88px;
+}
+#wave7{
+    top: -152px;
+    left: 110px;
+}
+#wave8{
+    top: -216px;
+    left: 132px;
+}
+
+
+h2{
+    position: relative;
+    top: 30vh;
+}
+
+
+
+@keyframes flow {
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(-44px);
+    }
+}
+
+@keyframes sail {
+    0%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+}
+
 /* ----------Definitions---------- */
 
 .rfont {
 	font-family: Randi Font;
-}
-
-.cursivefont {
-	font-family: cursive;
 }
 
 .sdfont {
@@ -251,6 +412,18 @@ div#mapdiv {
 
 .msrfont {
 	font-family: Mason Sans Regular;
+}
+
+.normaltxt {
+	font-size: 20px;
+	margin: 5%;
+	line-height: 35px;
+}
+
+.smoltxt {
+	font-size: 15px;
+	margin: 5%;
+	line-height: 25px;
 }
 
 .hidden {
