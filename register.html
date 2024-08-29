@@ -1,10 +1,30 @@
 <!-- wp:html -->
 
 <style>
-    .sportimg {
+    .eventimg {
         border-radius: 30px;
         height: 200px;
         width: 200px;
+        background: black;
+    }
+
+    .eventcont {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .cart {
+        border-radius: 30px;
+        background: #001330;
+        text-decoration: none;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .tdn {
+        text-decoration: none;
     }
 </style>
 
@@ -67,7 +87,9 @@
         <div class="eventcont">
 
             <div class="sporteventcont">
-                <a href="https://afmcsilhouettes.in/product-category/sports/">
+                <a class="tdn" href="https://afmcsilhouettes.in/product-category/sports/">
+
+                    <img class="eventimg">
 
                     <p class="normaltxt sdfont">
                         Sports
@@ -76,18 +98,10 @@
                 </a>
             </div>
 
-            <div class="culteventcont">
-                <a href="https://afmcsilhouettes.in/culturals">
-
-                    <p class="normaltxt sdfont">
-                        Culturals
-                    </p>
-
-                </a>
-            </div>
-
             <div class="litandfinearteventcont">
-                <a href="https://afmcsilhouettes.in/lafa">
+                <a class="tdn" href="https://afmcsilhouettes.in/lafa">
+
+                    <img class="eventimg">
 
                     <p class="normaltxt sdfont">
                         Literary and Fine Arts
@@ -96,9 +110,32 @@
                 </a>
             </div>
 
+            <div class="culteventcont">
+                <a class="tdn" href="https://afmcsilhouettes.in/culturals">
+
+                    <img class="eventimg">
+
+                    <p class="normaltxt sdfont">
+                        Culturals
+                    </p>
+
+                </a>
+            </div>
+
         </div>
     </div>
-</center>
 
-<a id="regpgbtn" data-text="Register" class="btn-mix" href="https://afmcsilhouettes.in/cart/">Proceed to Cart</a>
+    <div>
+
+        <a href="https://afmcsilhouettes.in/cart/">
+            <div class="cart">
+                <p style="margin: 0;" class="normaltxt sdfont">
+                    Cart
+                </p>
+            </div>
+        </a>
+
+    </div>
+
+</center>
 <!-- /wp:html -->

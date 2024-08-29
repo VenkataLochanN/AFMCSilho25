@@ -239,13 +239,13 @@ div#mapdiv {
 
 
 .divider {
-	max-width: 20%;
+	max-width: 20% !important;
 }
 @media only screen and (max-width: 600px) {
 
 	/* Do this if window is width or less */
 	.divider {
-		max-width: 40%;
+		max-width: 40% !important;
 	}
 }
 
@@ -375,14 +375,6 @@ div#mapdiv {
     left: 132px;
 }
 
-
-h2{
-    position: relative;
-    top: 30vh;
-}
-
-
-
 @keyframes flow {
     0%{
         transform: translate(0px);
@@ -453,4 +445,12 @@ h2{
 
 .textsize15 {
 	font-size: 15px;
+}
+
+/* ----------Button Mods---------- */
+
+.wp-element-button {
+    border-radius: 30px;
+    font-family: 'Sailors Dairy' !important;
+    font-size: 20px !important;
 }
