@@ -1,0 +1,97 @@
+<!-- wp:template-part {"slug":"header","theme":"blockstarter","area":"header"} /-->
+
+<style>
+    label {
+        font-family: Sailors Dairy;
+        font-size: 20px;
+    }
+
+    textarea {
+        border-radius: 30px;
+    }
+
+    input {
+        border-radius: 30px;
+        font-family: 'Sailors Dairy';
+        color: #001330;
+    }
+
+    .woocommerce-page .select2-container .select2-search__field,
+    .woocommerce-page .select2-container .select2-selection {
+        border-radius: 30px;
+
+    }
+
+    .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+    .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+        border-radius: 30px;
+    }
+
+    .woocommerce-page .select2-container .select2-dropdown {
+        border-radius: 30px;
+        background: #001330;
+        font-size: 20px;
+        font-family: Sailors Dairy;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #001330 !important;
+        font-size: 20px;
+        font-family: Sailors Dairy;
+    }
+
+    #add_payment_method #payment,
+    .woocommerce-cart #payment,
+    .woocommerce-checkout #payment {
+        background: #001330 !important;
+        border-radius: 30px !important;
+    }
+
+    #add_payment_method #payment div.payment_box,
+    .woocommerce-cart #payment div.payment_box,
+    .woocommerce-checkout #payment div.payment_box {
+        border-radius: 30px !important;
+        background-color: #e6d5a0 !important;
+        color: #001330 !important;
+        font-size: 20px;
+        font-family: Sailors Dairy;
+    }
+
+    #add_payment_method #payment div.payment_box::before,
+    .woocommerce-cart #payment div.payment_box::before,
+    .woocommerce-checkout #payment div.payment_box::before {
+        border-right-color: transparent !important;
+        border-left-color: transparent !important;
+        border-top-color: transparent !important;
+        border: 1em solid #e6d5a0;
+    }
+
+    .woocommerce-privacy-policy-text,
+    a.woocommerce-terms-and-conditions-link,
+    a.woocommerce-privacy-policy-link {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: Sailors Dairy;
+    }
+
+    button#place_order {
+        background: #e6d5a0;
+        color: #013300;
+    }
+</style>
+<!-- wp:html -->
+
+<center>
+    <h1 class="msrfont">
+        Checkout
+    </h1>
+
+    <img class="divider" src="https://afmcsilhouettes.in/wp-content/uploads/2024/08/Border-.png">
+
+    <!-- wp:woocommerce/classic-shortcode {"shortcode":"checkout"} /-->
+
+</center>
+
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"footer","theme":"blockstarter","area":"footer"} /-->
