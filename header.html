@@ -3,6 +3,7 @@
 
     new bubbleCursor();
 </script>
+
 <div id="preloader" class="preloader">
     <div class="container">
         <div class="wave" id="wave1"></div>
@@ -19,10 +20,17 @@
         </div>
     </div>
 </div>
+
+<div id="uccont" class="uccont">
+    <h1 class="msrfont uctext">
+        We're doing some work on this site... We'll be right back!
+    </h1>
+</div>
+
 <div class="headerparentdiv">
 
     <div class="headerlogoimagecont">
-        <img class="headerlogoimg" height="75px" width="75px">
+        <img class="headerlogoimg" height="75px" width="75px" src="https://afmcsilhouettes.in/wp-content/uploads/2024/08/Y.png" alt="SilhoLogo">
     </div>
 
     <div class="headertopcont">
@@ -111,14 +119,6 @@
     //after window is loaded completely 
     window.onload = function () {
         //hide the preloader
-        // document.querySelector(".preloader").style.display = "none";
         document.getElementById("preloader").classList.toggle("fadeout");
     }
-
-    // var delayInMilliseconds = 3500; //3.5 second
-
-    // setTimeout(function () {
-    //     //your code to be executed after 1 second
-    //     document.querySelector(".preloader").style.display = "none";
-    // }, delayInMilliseconds);
 </script>

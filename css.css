@@ -22,7 +22,7 @@ body {
 }
 
 .headerlogoimg {
-	background-color: black;
+	/* background-color: black; */
 }
 
 
@@ -130,19 +130,19 @@ body {
 }
 
 #sidebar {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    background-color: #044553;
-    transition: all 1000ms ease-in-out;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	display: flex;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	background-color: #044553;
+	transition: all 1000ms ease-in-out;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .lineg {
@@ -167,12 +167,12 @@ body {
 }
 
 .sbcont {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+	align-content: center;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 /* ----------Footer---------- */
@@ -241,6 +241,7 @@ div#mapdiv {
 .divider {
 	max-width: 20% !important;
 }
+
 @media only screen and (max-width: 600px) {
 
 	/* Do this if window is width or less */
@@ -252,23 +253,45 @@ div#mapdiv {
 /* ----------Store---------- */
 
 .wc-block-grid__products {
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ----------Under Construction---------- */
+
+.uccont {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	background: #001330;
+	height: 100vh;
+	z-index: 1000;
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.uctext {
+	padding: 10px;
+	text-align: center;
 }
 
 /* ----------Preloader---------- */
 
+
 .preloader {
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #001330;
-    height: 100vh;
-    z-index: 99999;
-    text-align: center;
-    width: 100vw;
-    justify-content: center;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #001330;
+	height: 100vh;
+	z-index: 99999;
+	text-align: center;
+	width: 100vw;
+	justify-content: center;
 }
 
 .fadeout {
@@ -276,121 +299,136 @@ div#mapdiv {
 }
 
 @keyframes fo {
-	0%{
+	0% {
 		opacity: 100%;
-	    }
-    100%{
+	}
+
+	100% {
 		opacity: 0%;
 		display: none;
-	    }
-  }
-
-.container{
-    display: inline-block;
-    position: relative;
-    top: 35vh;
-    width: 120px;
-    height: 100px;
-    overflow: hidden;
+	}
 }
 
-.object{
-    position: inherit;
-    top: -246px;
-    left: 30px;
-    z-index: -10;
-    transform: rotate(-5deg);
-    animation: sail 2s infinite linear;
+.container {
+	display: inline-block;
+	position: relative;
+	top: 35vh;
+	width: 120px;
+	height: 100px;
+	overflow: hidden;
 }
 
-.boat{
-    width: 50px;
-    height: 40px;
-    background-color: #f0e3c0;
-    transform: perspective(50px) rotateX(-60deg);
+.object {
+	position: inherit;
+	top: -246px;
+	left: 30px;
+	z-index: -10;
+	transform: rotate(-5deg);
+	animation: sail 2s infinite linear;
 }
 
-.flag{
-    background-color: #f0e3c0;
-    width: 20px;
-    height: 15px;
-    transform: rotate(70deg) skew(45deg);
-    position: relative;
-    top: -43px;
-    left: 13px;
+.boat {
+	width: 50px;
+	height: 40px;
+	background-color: #f0e3c0;
+	transform: perspective(50px) rotateX(-60deg);
 }
 
-
-
-.wave{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 4px solid transparent;
+.flag {
+	background-color: #f0e3c0;
+	width: 20px;
+	height: 15px;
+	transform: rotate(70deg) skew(45deg);
+	position: relative;
+	top: -43px;
+	left: 13px;
 }
 
-#wave1, #wave3, #wave5, #wave7{
-    background-color: transparent;
-    border-top: 4px solid #f0e3c0;
-    animation: flow 1s infinite linear;
-}
-#wave2, #wave4, #wave6, #wave8{
-    border-bottom: 4px solid #f0e3c0;
-    animation: flow 1s infinite linear;
+.wave {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 4px solid transparent;
 }
 
-#wave1{
-    top: 76px;
-    left: -22px;
+#wave1,
+#wave3,
+#wave5,
+#wave7 {
+	background-color: transparent;
+	border-top: 4px solid #f0e3c0;
+	animation: flow 1s infinite linear;
 }
-#wave2{
-    z-index: 1;
-    top: 12px;
+
+#wave2,
+#wave4,
+#wave6,
+#wave8 {
+	border-bottom: 4px solid #f0e3c0;
+	animation: flow 1s infinite linear;
 }
-#wave3{
-    top: 0px;
-    left: 22px;
+
+#wave1 {
+	top: 76px;
+	left: -22px;
 }
-#wave4{
-    z-index: 2;
-    top: -64px;
-    left: 44px;
+
+#wave2 {
+	z-index: 1;
+	top: 12px;
 }
-#wave5{
-    top: -76px;
-    left: 66px;
+
+#wave3 {
+	top: 0px;
+	left: 22px;
 }
-#wave6{
-    z-index: 3;
-    top: -140px;
-    left: 88px;
+
+#wave4 {
+	z-index: 2;
+	top: -64px;
+	left: 44px;
 }
-#wave7{
-    top: -152px;
-    left: 110px;
+
+#wave5 {
+	top: -76px;
+	left: 66px;
 }
-#wave8{
-    top: -216px;
-    left: 132px;
+
+#wave6 {
+	z-index: 3;
+	top: -140px;
+	left: 88px;
+}
+
+#wave7 {
+	top: -152px;
+	left: 110px;
+}
+
+#wave8 {
+	top: -216px;
+	left: 132px;
 }
 
 @keyframes flow {
-    0%{
-        transform: translate(0px);
-    }
-    100%{
-        transform: translate(-44px);
-    }
+	0% {
+		transform: translate(0px);
+	}
+
+	100% {
+		transform: translate(-44px);
+	}
 }
 
 @keyframes sail {
-    0%{
-        transform: rotate(-5deg);
-    }
-    50%{
-        transform: rotate(5deg);
-    }
+	0% {
+		transform: rotate(-5deg);
+	}
+
+	50% {
+		transform: rotate(5deg);
+	}
 }
 
 /* ----------Definitions---------- */
@@ -450,7 +488,7 @@ div#mapdiv {
 /* ----------Button Mods---------- */
 
 .wp-element-button {
-    border-radius: 30px;
-    font-family: 'Sailors Dairy' !important;
-    font-size: 20px !important;
+	border-radius: 30px;
+	font-family: 'Sailors Dairy' !important;
+	font-size: 20px !important;
 }
