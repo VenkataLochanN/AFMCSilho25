@@ -1,21 +1,85 @@
-<!-- wp:html -->
+<!-- wp:template-part {"slug":"header","theme":"blockstarter"} /-->
 
 <style>
-    h1.alignwide.wp-block-query-title {
+    .wc-block-pagination.wc-block-components-pagination {
         display: none;
     }
 
-    h3 a {
-        font-family: Sailors Dairy !important;
+    .wc-block-components-sort-select__select {
+        font-size: 20px !important;
+    }
+
+    a.wc-block-components-product-name {
+        font-family: Sailors Dairy;
+        font-size: 20px;
+    }
+
+    p.woocommerce-result-count {
+        font-family: 'Sailors Dairy';
+        font-size: 30px !important;
+    }
+
+    select {
+        font-family: 'Sailors Dairy';
     }
 </style>
 
-<!-- wp:woocommerce/all-products {"columns":3,"rows":3,"alignButtons":false,"contentVisibility":{"orderBy":true},"orderby":"date","layoutConfig":[["woocommerce/product-image",{"imageSizing":"thumbnail"}],["woocommerce/product-title"],["woocommerce/product-price"],["woocommerce/product-rating"],["woocommerce/product-button"]]} -->
+<!-- wp:group {"tagName":"main","layout":{"inherit":true,"type":"constrained"}} -->
+<main class="wp-block-group"><!-- wp:woocommerce/breadcrumbs /-->
 
-<div class="wp-block-woocommerce-all-products wc-block-all-products"
-    data-attributes="{&quot;alignButtons&quot;:false,&quot;columns&quot;:3,&quot;contentVisibility&quot;:{&quot;orderBy&quot;:true},&quot;isPreview&quot;:false,&quot;layoutConfig&quot;:[[&quot;woocommerce/product-image&quot;,{&quot;imageSizing&quot;:&quot;thumbnail&quot;}],[&quot;woocommerce/product-title&quot;],[&quot;woocommerce/product-price&quot;],[&quot;woocommerce/product-rating&quot;],[&quot;woocommerce/product-button&quot;]],&quot;orderby&quot;:&quot;date&quot;,&quot;rows&quot;:3}">
-</div>
+    <!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide"} /-->
 
-<!-- /wp:woocommerce/all-products -->
+    <!-- wp:woocommerce/store-notices /-->
 
-<!-- /wp:html -->
+    <!-- wp:group {"className":"alignwide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+    <div class="wp-block-group alignwide"><!-- wp:woocommerce/product-results-count /--></div>
+    <!-- /wp:group -->
+
+    <!-- wp:woocommerce/product-collection {"queryId":11,"query":{"woocommerceAttributes":[],"woocommerceStockStatus":["instock","outofstock","onbackorder"],"taxQuery":[],"isProductCollectionBlock":true,"perPage":10,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"queryContextIncludes":["collection"],"align":"wide"} -->
+    <div class="wp-block-woocommerce-product-collection alignwide">
+        <!-- wp:woocommerce/all-products {"columns":4,"rows":4,"alignButtons":false,"contentVisibility":{"orderBy":true},"orderby":"date","layoutConfig":[["woocommerce/product-image",{"imageSizing":"thumbnail"}],["woocommerce/product-title"],["woocommerce/product-price"],["woocommerce/product-rating"],["woocommerce/product-button"]]} -->
+        <div class="wp-block-woocommerce-all-products wc-block-all-products"
+            data-attributes="{&quot;alignButtons&quot;:false,&quot;columns&quot;:4,&quot;contentVisibility&quot;:{&quot;orderBy&quot;:true},&quot;isPreview&quot;:false,&quot;layoutConfig&quot;:[[&quot;woocommerce/product-image&quot;,{&quot;imageSizing&quot;:&quot;thumbnail&quot;}],[&quot;woocommerce/product-title&quot;],[&quot;woocommerce/product-price&quot;],[&quot;woocommerce/product-rating&quot;],[&quot;woocommerce/product-button&quot;]],&quot;orderby&quot;:&quot;date&quot;,&quot;rows&quot;:4}">
+            <!-- wp:woocommerce/product-image {"imageSizing":"thumbnail","isDescendentOfQueryLoop":true} /-->
+
+            <!-- wp:woocommerce/product-title -->
+            <div class="wp-block-woocommerce-product-title is-loading"></div>
+            <!-- /wp:woocommerce/product-title -->
+
+            <!-- wp:woocommerce/product-price {"isDescendentOfQueryLoop":true} /-->
+
+            <!-- wp:woocommerce/product-rating {"isDescendentOfQueryLoop":true} /-->
+
+            <!-- wp:woocommerce/product-button -->
+            <div class="wp-block-woocommerce-product-button is-loading"></div>
+            <!-- /wp:woocommerce/product-button -->
+        </div>
+        <!-- /wp:woocommerce/all-products -->
+
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+        <!-- wp:query-pagination-previous /-->
+
+        <!-- wp:query-pagination-numbers /-->
+
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+
+        <!-- wp:woocommerce/product-collection-no-results -->
+        <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","flexWrap":"wrap"}} -->
+        <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
+            <p class="has-medium-font-size"><strong>No results found</strong></p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>You can try <a class="wc-link-clear-any-filters" href="#">clearing any filters</a> or head to our <a
+                    class="wc-link-stores-home" href="#">store's home</a></p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+        <!-- /wp:woocommerce/product-collection-no-results -->
+    </div>
+    <!-- /wp:woocommerce/product-collection -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"blockstarter"} /-->
