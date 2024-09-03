@@ -20,6 +20,10 @@ body {
 	flex-direction: column;
 }
 
+.headerlogoimagecont {
+    margin-top: 10px;
+}
+
 .pagelinks {
 	text-decoration: none;
 	font-size: 20px;
