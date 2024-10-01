@@ -499,5 +499,15 @@ div#mapdiv {
 	font-size: 20px !important;
 }
 
-/* ----------Products---------- */
+/* ----------Checkout---------- */
 
+.col2-set {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-2 {
+	display: none;
+}
